@@ -1,0 +1,18 @@
+SINGLETON
+
+1º) ** Creamos un atributo estático de tipo Persona (nombre de la clase) llamado "instancia" **
+
+		public static Persona instancia;
+
+2º) Creamos una Clase "Persona" con sus atributos, su constructor completo y su toString.
+
+3º) Creamos un método estático con todos los atributos de la Clase "Persona". Debemos seguir el siguiente formato:
+	
+		public static Persona getInstance(String nombre, String dni, int edad) {
+	
+			if (instancia == null) {
+				instancia = new Persona(nombre, dni, edad);
+			}
+	
+			return instancia;
+		}
