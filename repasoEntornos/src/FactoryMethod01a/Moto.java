@@ -1,7 +1,8 @@
-package FactoryMethod;
+package FactoryMethod01a;
 
 /**
  * Se crea el vehículo Moto en la Fabrica
+ * 
  * @author rasob
  *
  */

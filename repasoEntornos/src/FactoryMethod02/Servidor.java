@@ -5,7 +5,7 @@ public class Servidor implements Ordenador {
 	private String RAM;
 	private String HDD;
 	private String CPU;
-	
+
 	public Servidor(String ram, String hdd, String cpu) {
 		super();
 		RAM = ram;

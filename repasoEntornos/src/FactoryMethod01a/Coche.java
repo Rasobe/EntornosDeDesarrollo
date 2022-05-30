@@ -1,7 +1,8 @@
-package FactoryMethod;
+package FactoryMethod01a;
 
 /**
- * Vehículo creado en la Fabrica <b>(coche)</b>
+ * Clase coche que hereda métodos de Transporte (superclase)
+ * 
  * @author rasob
  *
  */

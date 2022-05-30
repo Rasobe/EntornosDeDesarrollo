@@ -5,7 +5,7 @@ public class PC implements Ordenador {
 	private String RAM;
 	private String HDD;
 	private String CPU;
-	
+
 	public PC(String ram, String hdd, String cpu) {
 		super();
 		RAM = ram;
@@ -32,7 +32,5 @@ public class PC implements Ordenador {
 	public String toString() {
 		return "RAM: " + RAM + " \nHDD: " + HDD + " \nCPU: " + CPU + " \n";
 	}
-	
-	
 
 }

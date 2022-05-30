@@ -1,7 +1,8 @@
-package FactoryMethod;
+package FactoryMethod01a;
 
 /**
- * Con la clase Fabrica se crean los tipos de vehíulo
+ * Creador de transportes con el método construir
+ * 
  * @author rasob
  *
  */

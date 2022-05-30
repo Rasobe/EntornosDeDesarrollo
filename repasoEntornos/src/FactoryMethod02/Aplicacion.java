@@ -1,7 +1,5 @@
 package FactoryMethod02;
 
-import FactoryMethod.Fabrica;
-
 public class Aplicacion {
 
 	public static void main(String[] args) {
