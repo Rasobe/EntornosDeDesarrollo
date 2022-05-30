@@ -17,7 +17,7 @@ public class Aplicacion {
 		Transporte p2 = Fabrica.construir("Coche");
 		Transporte p3 = Fabrica.construir("hola");
 		
-		p1.arranar();
+		p1.arrancar();
 		p2.detener();
 
 	}

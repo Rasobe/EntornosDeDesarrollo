@@ -27,16 +27,16 @@ BUILDER
 				return new Persona(this);
 			}
 			
-3º) Ahora volvemos a la Clase "Persona" y creamos el método constructor.
+3º) Ahora volvemos a la Clase "Persona" y creamos el metodo constructor.
 
-	- CASO 1. No ponemos ningún tipo de restricción
+	- CASO 1. No ponemos ningun tipo de restricción
 			Persona(PersonaBuilder builder) {
 				this.nombre = builder.getNombre();
 				this.dni = builder.getDni();
 				this.edad = builder.getEdad();
 			}
 			
-	- CASO 2. Ponemos restricción de que si el DNI es null, no se puede crear el objeto 
+	- CASO 2. Ponemos restriccion de que si el DNI es null, no se puede crear el objeto 
 			Persona(PersonaBuilder builder) {
 				this.nombre = builder.getNombre();
 				if(builder.getDni() == null)
@@ -49,4 +49,4 @@ BUILDER
 
 	Persona p = new PersonaBuilder().edad(12).nombre("David").dni("18052485H").nombre("Pegleg").build();
 	
-	** ES OBLIGATORIO PONER EL ".build" AL FINAL DE CADA CREACIÓN, SINO SALDRÁ ERROR Y NO PODRÁS CREARLO **
+	** ES OBLIGATORIO PONER EL ".build" AL FINAL DE CADA CREACION, SINO SALDRA ERROR Y NO PODRAS CREARLO **

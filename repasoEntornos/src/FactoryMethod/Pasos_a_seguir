@@ -7,13 +7,13 @@ FACTORY METHOD
 	Moto _/
 
 
-1º) Creamos la interfáz "Transporte" con los métodos que obtendrán todas las subclases ().
+1º) Creamos la interfaz "Transporte" con los metodos que obtendran todas las subclases ().
 
-2º) Creamos las subclases (Coche, Moto) e implementamos la interfáz en estas.
+2º) Creamos las subclases (Coche, Moto) e implementamos la interfaz en estas.
 
-3º) Creamos la clase "Fabrica" en la que creamos un método estático constructor donde pasamos un parámetro de texto para crear un Transporte del tipo que deseemos.
-	En este método, en forma de varios if o un switch, tenemos que hacer que si el parámetro introducido coincide con el valor que identifica a la clase (en nuestro 
-	caso el tipo de transporte) cree la clase, en caso de que no exista, devuelva null.
+3º) Creamos la clase "Fabrica" en la que creamos un metodo estatico constructor donde pasamos un parametro de texto para crear un Transporte 
+	del tipo que deseemos. En este metodo, en forma de varios if o un switch, tenemos que hacer que si el parametro introducido coincide con 
+	el valor que identifica a la clase (en nuestro caso el tipo de transporte) cree la clase, en caso de que no exista, devuelva null.
 	
 4º) Para probarlo, crearemos un main y deberemos crear objetos de la siguiente manera.
  	

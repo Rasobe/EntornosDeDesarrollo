@@ -12,7 +12,7 @@ public interface Transporte {
 	/**
 	 * Se arranca el vehículo
 	 */
-	public void arranar();
+	public void arrancar();
 	
 	/**
 	 * Se detiene el vehículo

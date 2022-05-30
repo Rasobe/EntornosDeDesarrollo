@@ -1,0 +1,16 @@
+1º) Primero creamos la superclase(interface) con los metodos que corresponderan a todas las subclases.
+
+2º) Creamos todas las subclases implementando la superclase/interfaz y agregando sus respectivos atributos,
+	constructor, returns en metodos y toString.
+
+3º) ** OPCIONAL ** Creamos la clase enum TipoOrdenador para declarar el "id" que identifica el tipo de ordenador. Esto se puede sustituir
+	por un String ID (por ejemplo).
+	
+4º) Creamos la fabrica en la que primero declararemos la superclase a null, y haremos con varios ifs, o en este caso
+	con switch, la identificacion de cada ordenador. En cada identificacion crearemos el tipo de ordenador especificado (new PC(), new Servidor()...).  
+	
+5º) Creamos la aplicacion(main) en la que testearemos todo lo realizado anteriormente. 
+
+		Ordenador pc = FabricaOrdenador.crearOrdenador(TipoOrdenador.PC, "1GB", "256GB", "Intel Core 2 Duo");
+		Ordenador server = FabricaOrdenador.crearOrdenador(TipoOrdenador.SERVIDOR, "32GB", "2TB", "AMD Ryzen 7 2700X");
+		Ordenador superpc = FabricaOrdenador.crearOrdenador(TipoOrdenador.SUPERORDENADOR, "1048MB", "500TB", "Doble Pentium Omega Warrior HD FULL 29K");

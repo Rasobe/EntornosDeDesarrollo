@@ -11,7 +11,7 @@ public class Moto implements Transporte {
 	 * Arranca la moto
 	 */
 	@Override
-	public void arranar() {
+	public void arrancar() {
 		System.out.println("Arrancando la moto...");
 	}
 
