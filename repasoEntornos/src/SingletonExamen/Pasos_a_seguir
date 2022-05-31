@@ -1,0 +1,16 @@
+SINGLETON
+
+1º) ** Creamos un atributo estatico PRIVADO del nombre de la clase(en este caso Banco) llamado "instancia" **
+
+		public static Banco instancia;
+
+2º) Creamos un metodo PRIVADO "Banco" con sus atributos, su constructor completo y su toString.
+
+3º) Creamos un metodo estático con todos los atributos de la Clase "Banco". Debemos seguir el siguiente formato:
+	
+		public static Banco getInstance() {
+		if (instancia == null) {
+			instancia = new Banco();
+		}
+		return instancia;
+	}

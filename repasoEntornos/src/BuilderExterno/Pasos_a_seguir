@@ -2,14 +2,13 @@ BUILDER
 
 1º) Creamos la Clase "Persona" con:
 	- atributos corresponientes
-	- contructor vacio
-	- getters y setters
+	- contructor vacio PRIVADO
 	- toString.
 
 2º) Creamos la Clase "PersonaBuilder" con:
 	- los mismos atributos que la Clase "Persona"
 	- SOLO con sus getters
-	- constructor para cada atributo (ej)
+	- constructor para cada atributo y su constructor PUBLIC (ej)
 	
 			public PersonaBuilder nombre_metodo(String nombre_atributo_clase_normal) {
 					this.nombre_atributo_builder = nombre_atributo_clase_normal;

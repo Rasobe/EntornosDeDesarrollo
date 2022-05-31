@@ -1,18 +1,25 @@
 SINGLETON
 
-1º) ** Creamos un atributo estatico de tipo Persona (nombre de la clase) llamado "instancia" **
+1º) ** Creamos un atributo estatico PRIVADO del nombre de la clase(en este caso Persona) llamado "instancia" **
 
 		public static Persona instancia;
 
-2º) Creamos una Clase "Persona" con sus atributos, su constructor completo y su toString.
+2º) Creamos una metodo PRIVADO "Persona" con sus atributos, su constructor completo y su toString.
 
-3º) Creamos un metodo estático con todos los atributos de la Clase "Persona". Debemos seguir el siguiente formato:
+3º) Creamos un metodo estático con todos los atributos de la Clase "Persona". Debemos seguir el siguiente formato(con valores que se introducen):
 	
 		public static Persona getInstance(String nombre, String dni, int edad) {
-	
 			if (instancia == null) {
 				instancia = new Persona(nombre, dni, edad);
 			}
-	
 			return instancia;
 		}
+		
+	O de esta otra forma(por defecto):
+	
+		public static Persona getInstance() {
+		if (instancia == null) {
+			instancia = new Persona("nombre", "dni", 0);
+		}
+		return instancia;
+	}

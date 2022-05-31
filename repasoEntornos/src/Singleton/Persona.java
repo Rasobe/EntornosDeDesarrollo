@@ -2,13 +2,14 @@ package Singleton;
 
 public final class Persona {
 
-	public static Persona instancia;
+	private static Persona instancia;
 
 	String nombre;
 	String dni;
 	int edad;
 
-	public Persona(String nombre, String dni, int edad) {
+	private Persona(String nombre, String dni, int edad) {
+
 		super();
 		this.nombre = nombre;
 		this.dni = dni;
@@ -25,11 +26,16 @@ public final class Persona {
 		return instancia;
 	}
 
+	public static Persona getInstance() {
+		if (instancia == null) {
+			instancia = new Persona("nombre", "dni", 0);
+		}
+		return instancia;
+	}
+
 	@Override
 	public String toString() {
 		return "Persona [nombre=" + nombre + ", dni=" + dni + ", edad=" + edad + "]";
 	}
 
-	
-	
 }

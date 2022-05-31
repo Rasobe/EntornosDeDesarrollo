@@ -1,0 +1,33 @@
+1º) Creamos los atributos de Persona.
+
+2º) Creamos la clase estatica publica llamada Builder con los mismos atributos de Persona.
+
+			public static class Builder {
+			}
+
+3º) Creamos los métodos para insertar el nombre, apellidos, edad y direccion dentro de la clase estatica creada en el paso 2. ej.
+			
+			public Builder nombre(String nombre, String apellidos) {
+				this.nombre = nombre;
+				this.apellidos = apellidos;
+				return this;
+			}
+
+4º) Creamos el metodo publico build para construir los usuarios con el builder dentro de la clase estatica creada en el paso 2.
+			
+			public Persona build() {
+				return new Persona(this);
+			}
+
+5º) Creamos el Persona Builder, en el caso de que queramos obligar a introducir ciertos atributos, lo haremos como en el ejemplo de nombre y apellidos.
+
+			Persona(Builder builder) {
+				if (builder.nombre == null && builder.apellidos == null) {
+					throw new IllegalArgumentException("nombre y apellidos requeridos");
+				} else {
+					this.nombre = builder.nombre;
+					this.apellidos = builder.apellidos;
+					this.edad = builder.edad;
+					this.direccion = builder.direccion;
+				}
+			}

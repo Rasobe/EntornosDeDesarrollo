@@ -1,7 +1,9 @@
-package Builder;
+package BuilderExterno;
 
 public class PersonaBuilder {
 
+//	2º)
+	
 	private String nombre;
 	private String dni;
 	private int edad;
