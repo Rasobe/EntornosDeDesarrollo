@@ -8,7 +8,7 @@ public final class Persona {
 	String dni;
 	int edad;
 
-	private Persona(String nombre, String dni, int edad) {
+	private Persona(String nombre, String dni, int edad) { // el constructor de la persona debera ser privado
 
 		super();
 		this.nombre = nombre;

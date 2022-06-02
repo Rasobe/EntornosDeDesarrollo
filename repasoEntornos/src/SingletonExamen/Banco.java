@@ -11,10 +11,11 @@ public class Banco {
 
 	ArrayList<Cuenta> listaCuentas;
 
-	private Banco() {
-		this.listaCuentas = new ArrayList<Cuenta>();
+	private Banco(ArrayList<Cuenta> lista) {
+		this.listaCuentas = lista;
 	}
 
+	
 	public void abrirCuenta(Cuenta c) {
 		listaCuentas.add(c);
 	}
@@ -31,8 +32,18 @@ public class Banco {
 
 	public static Banco getInstance() {
 		if (instancia == null) {
-			instancia = new Banco();
+			ArrayList<Cuenta> lista = new ArrayList<Cuenta>();
+			instancia = new Banco(lista);
 		}
 		return instancia;
 	}
+	
+	public static Banco getInstance(ArrayList<Cuenta> lista) {
+		if (instancia == null) {
+			instancia = new Banco(lista);
+		}
+		return instancia;
+	}
+
+	
 }

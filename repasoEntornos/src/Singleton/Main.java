@@ -9,8 +9,8 @@ public class Main {
 		Persona p2 = Persona.getInstance("David Doble H", "18855052Q", 19);
 		
 		
-		System.out.println(p1);
-		System.out.println(p2);
+		System.out.println(p1.getInstance());
+		System.out.println(p2.getInstance());
 		
 	}
 
