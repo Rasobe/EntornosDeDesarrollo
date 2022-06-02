@@ -12,7 +12,7 @@ public class Banco {
 	ArrayList<Cuenta> listaCuentas;
 
 	private Banco(ArrayList<Cuenta> lista) {
-		this.listaCuentas = lista;
+		listaCuentas = lista;
 	}
 
 	
