@@ -1,7 +1,6 @@
 package JUnit;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.fail;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
@@ -9,9 +8,12 @@ import org.junit.jupiter.api.Test;
 
 class TestCalculadora {
 
+	static Calculadora c;
+	
 	@BeforeAll
 	public static void inicio() {
 		System.out.println("Método iniciado");
+		c = new Calculadora(10, 3);
 	}
 	
 	@AfterAll
@@ -21,7 +23,8 @@ class TestCalculadora {
 	
 	@Test
 	void testCalculadora() {
-		fail("Not yet implemented");
+		Calculadora c2 = new Calculadora(10, 3);
+		assertEquals(c.producto(), c.producto());
 	}
 
 	@Test
